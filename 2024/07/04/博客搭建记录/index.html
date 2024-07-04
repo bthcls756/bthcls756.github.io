@@ -1,0 +1,214 @@
+<!DOCTYPE html><html lang="zh_CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>博客搭建记录 | Bthcls'Blog</title><meta name="author" content="Bthcls"><meta name="copyright" content="Bthcls"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="博客搭建记录我的博客 突然心血来潮，想搭建起自己的博客，把平时的Markdown笔记存下来，CSDN属实是不想再用了，文章违规、也不太方便写、平时要用还要登录，但是本地的MD笔记经常清除本地图片或者找不到放哪了，所以感觉还是非常有必要搭建博客来记录自己的学习情况 方案选择快速搭建个人博客 —— 保姆级教程 | 攻城狮杰森   查资料后了解到两种主流方案： 1、Hexo + github pages">
+<meta property="og:type" content="article">
+<meta property="og:title" content="博客搭建记录">
+<meta property="og:url" content="http://example.com/2024/07/04/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/index.html">
+<meta property="og:site_name" content="Bthcls&#39;Blog">
+<meta property="og:description" content="博客搭建记录我的博客 突然心血来潮，想搭建起自己的博客，把平时的Markdown笔记存下来，CSDN属实是不想再用了，文章违规、也不太方便写、平时要用还要登录，但是本地的MD笔记经常清除本地图片或者找不到放哪了，所以感觉还是非常有必要搭建博客来记录自己的学习情况 方案选择快速搭建个人博客 —— 保姆级教程 | 攻城狮杰森   查资料后了解到两种主流方案： 1、Hexo + github pages">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/bthcls756/photo@main/W0FImWkz.jpg">
+<meta property="article:published_time" content="2024-07-04T13:48:33.277Z">
+<meta property="article:modified_time" content="2024-07-04T14:20:50.694Z">
+<meta property="article:author" content="Bthcls">
+<meta property="article:tag" content="博客,Hexo,github">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/bthcls756/photo@main/W0FImWkz.jpg"><link rel="shortcut icon" href="/img/pp.png"><link rel="canonical" href="http://example.com/2024/07/04/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Error',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: 'days',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"Author: Bthcls","link":"Link: ","source":"Source: Bthcls'Blog","info":"Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source."}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '博客搭建记录',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-07-04 22:20:50'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.2.0"><link rel="alternate" href="/atom.xml" title="Bthcls'Blog" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cdn.jsdelivr.net/gh/bthcls756/photo@main/86de0c8dce2ce9b2a845299461200bf5.jpeg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/bthcls756/photo@main/W0FImWkz.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="Bthcls'Blog"><span class="site-name">Bthcls'Blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">博客搭建记录</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-07-04T13:48:33.277Z" title="Created 2024-07-04 21:48:33">2024-07-04</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-07-04T14:20:50.694Z" title="Updated 2024-07-04 22:20:50">2024-07-04</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word Count:</span><span class="word-count">935</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading Time:</span><span>3mins</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="博客搭建记录"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="博客搭建记录"><a href="#博客搭建记录" class="headerlink" title="博客搭建记录"></a>博客搭建记录</h1><p><a target="_blank" rel="noopener" href="https://bthcls756.github.io/">我的博客</a></p>
+<p>突然心血来潮，想搭建起自己的博客，把平时的Markdown笔记存下来，CSDN属实是不想再用了，文章违规、也不太方便写、平时要用还要登录，但是本地的MD笔记经常清除本地图片或者找不到放哪了，所以感觉还是非常有必要搭建博客来记录自己的学习情况</p>
+<h2 id="方案选择"><a href="#方案选择" class="headerlink" title="方案选择"></a>方案选择</h2><p><a target="_blank" rel="noopener" href="https://pdpeng.github.io/2022/01/19/setup-personal-blog/">快速搭建个人博客 —— 保姆级教程 | 攻城狮杰森</a>  </p>
+<p>查资料后了解到两种主流方案：</p>
+<p>1、Hexo + github pages</p>
+<blockquote>
+<p><strong>Hexo</strong> 是一个快速、简单且功能强大的博客框架。你用<strong>Markdown</strong>（或其他标记语言）写帖子，Hexo 会在几秒钟内生成带有漂亮主题的<strong>静态文件</strong></p>
+<p><strong>GitHub Pages</strong>是一种由<strong>GitHub</strong>中的仓库&#x2F;项目直接创建的网页。管理简单，在本地编辑仓库中的内容，上传到GitHub上，GitHub Pages就能快速完成更新，重点是<strong>不花钱，不花钱，不花钱</strong></p>
+</blockquote>
+<p>2、Wordpress</p>
+<blockquote>
+<p>不多说</p>
+</blockquote>
+<p>最后选择了Hexo+github pages</p>
+<p>主要是我不太想管理网站，而且我更喜欢Hexo的主题风格，也没有多余的服务器了属实是，一台作vpn，一台作蜜罐，国内服务器真心感觉备案很烦</p>
+<h2 id="搭建过程"><a href="#搭建过程" class="headerlink" title="搭建过程"></a>搭建过程</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">环境准备：nodejs + npm + github账号 + vscode + git + 一个良好的网络（我不开加速器访问不上github）</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>Hexo常用命令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">- hexo init         # Initializes a website</span><br><span class="line">- hexo new          # Creates a new article</span><br><span class="line">- hexo generate     # Generates static files</span><br><span class="line">- hexo publish      # Publishes a draft</span><br><span class="line">- hexo server       # Starts a local server</span><br><span class="line">- hexo stop         # stop a local server(Ctrl-C)</span><br><span class="line">- hexo deploy       # Deploys your website</span><br><span class="line">- hexo clean        # Cleans the cache file (db.json) and generated files (public)</span><br></pre></td></tr></table></figure>
+
+<p>Hexo 基础结构</p>
+<blockquote>
+<p>public 最终所见网页的所有内容<br>node_modules 插件以及hexo所需node.js模块<br>_config.yml 站点配置文件，设定一些公开信息等<br>package.json 应用程序信息，配置hexo运行所需js包<br>scaffolds 模板文件夹，新建文章，会默认包含对应模板内容<br>themes 存放主题文件，hexo根据主题生成静态网页（速度贼快）<br>source 用于存放用户资源（除 posts 文件夹，其余命名方式为 “ + 文件名”的文件被忽略）</p>
+</blockquote>
+<p>首先找一个地方来放我们的博客项目</p>
+<p><img src="https://cdn.jsdelivr.net/gh/bthcls756/photo@main/image-20240704214653601.png" alt="image-20240704214653601"></p>
+<p>然后在对应目录下执行下面的命令，就会出现上图部分基础文件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+
+<h3 id="主题选择"><a href="#主题选择" class="headerlink" title="主题选择"></a>主题选择</h3><p><a target="_blank" rel="noopener" href="https://hexo.io/themes/">hexo官方主题库</a></p>
+<p>开始找了一些比较中意的主题，但是down下来后，发现自己不太配置的明白，所以就直接用了这个Butterfly，算比较常见和成熟吧。</p>
+<p><a target="_blank" rel="noopener" href="https://butterfly.js.org/posts/21cfbf15/">Butterfly安装配置教程</a></p>
+<p>具体配置参考上面这个链接就行，目前我的只完成了一部分，后续还要再研究下</p>
+<h3 id="github的配置"><a href="#github的配置" class="headerlink" title="github的配置"></a>github的配置</h3><p>创建一个仓库，名字为用户名.github.io，最好创建完以后，在仓库中新建一个index.html文件，然后访问看看</p>
+<p><img src="https://cdn.jsdelivr.net/gh/bthcls756/photo@main/image-20240704215505464.png" alt="image-20240704215505464"></p>
+<p>Pages下可以详细的配置，这里记住自己的分支，我的是main</p>
+<p><img src="https://cdn.jsdelivr.net/gh/bthcls756/photo@main/image-20240704215553046.png" alt="image-20240704215553046"></p>
+<p>在个人账号设置里，获取一下token，第一次创建才会显示，所以要记住</p>
+<p><img src="https://cdn.jsdelivr.net/gh/bthcls756/photo@main/image-20240704215839756.png" alt="image-20240704215839756"></p>
+<p>修改hexo项目根目录下的_config.yml</p>
+<p><img src="https://cdn.jsdelivr.net/gh/bthcls756/photo@main/image-20240704215943368.png" alt="image-20240704215943368"></p>
+<p>还有一个git的ssh，如果部署项目到github上的时候报错了，可能是这个没有配置，具体步骤忘了</p>
+<p><img src="https://cdn.jsdelivr.net/gh/bthcls756/photo@main/image-20240704215804469.png" alt="image-20240704215804469"></p>
+<h3 id="图床配置"><a href="#图床配置" class="headerlink" title="图床配置"></a>图床配置</h3><p>Github + PicGo + jsdelivr的cdn</p>
+<p>复制仓库中的一个图片链接</p>
+<p><img src="https://cdn.jsdelivr.net/gh/bthcls756/photo@main/image-20240704220324055.png" alt="image-20240704220324055"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/bthcls756/photo@main/image-20240704220518717.png" alt="image-20240704220518717"></p>
+<p>jsDelivr会自动转链接</p>
+<p><img src="https://cdn.jsdelivr.net/gh/bthcls756/photo@main/image-20240704220552399.png" alt="image-20240704220552399"></p>
+<p>token填开始在github个人账号配置的token</p>
+<p><img src="https://cdn.jsdelivr.net/gh/bthcls756/photo@main/image-20240704220405370.png" alt="image-20240704220405370"></p>
+<h3 id="Typora配置"><a href="#Typora配置" class="headerlink" title="Typora配置"></a>Typora配置</h3><p><img src="https://cdn.jsdelivr.net/gh/bthcls756/photo@main/image-20240704220755930.png" alt="image-20240704220755930"></p>
+<h3 id="写文"><a href="#写文" class="headerlink" title="写文"></a>写文</h3><p>写文在source&#x2F;_posts&#x2F;下写就行了，Typora或者直接VScode写都行</p>
+<p>最后把今天两篇文章一起上传了，网络不通我就上传不成功…</p>
+<p><img src="https://cdn.jsdelivr.net/gh/bthcls756/photo@main/image-20240704222030272.png" alt="image-20240704222030272"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="http://example.com">Bthcls</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="http://example.com/2024/07/04/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/">http://example.com/2024/07/04/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%8D%9A%E5%AE%A2-Hexo-github/">博客,Hexo,github</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/bthcls756/photo@main/W0FImWkz.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/07/04/%E7%97%9B%E8%8B%A6%E7%9A%84%E5%AF%86%E7%A0%81%E5%AD%A6/" title="痛苦的密码学"><img class="cover" src="https://cdn.jsdelivr.net/gh/bthcls756/photo@main/W0FImWkz.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous</div><div class="prev_info">痛苦的密码学</div></div></a></div><div class="next-post pull-right"><a href="/2024/07/04/2024-6-21%20ciscn2024%E5%8D%8A%E5%86%B3%20220416/" title="2024CISCN西南赛区半决赛Web复现"><img class="cover" src="https://cdn.jsdelivr.net/gh/bthcls756/photo@main/W0FImWkz.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next</div><div class="next_info">2024CISCN西南赛区半决赛Web复现</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://cdn.jsdelivr.net/gh/bthcls756/photo@main/86de0c8dce2ce9b2a845299461200bf5.jpeg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Bthcls</div><div class="author-info__description">练习时长两年半的网络安全选手</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/bthcls756"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/bthcls756" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:947819814@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95"><span class="toc-number">1.</span> <span class="toc-text">博客搭建记录</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E6%A1%88%E9%80%89%E6%8B%A9"><span class="toc-number">1.1.</span> <span class="toc-text">方案选择</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B"><span class="toc-number">1.2.</span> <span class="toc-text">搭建过程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Hexo"><span class="toc-number">1.2.1.</span> <span class="toc-text">安装Hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98%E9%80%89%E6%8B%A9"><span class="toc-number">1.2.2.</span> <span class="toc-text">主题选择</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#github%E7%9A%84%E9%85%8D%E7%BD%AE"><span class="toc-number">1.2.3.</span> <span class="toc-text">github的配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE"><span class="toc-number">1.2.4.</span> <span class="toc-text">图床配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Typora%E9%85%8D%E7%BD%AE"><span class="toc-number">1.2.5.</span> <span class="toc-text">Typora配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%99%E6%96%87"><span class="toc-number">1.2.6.</span> <span class="toc-text">写文</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/07/04/%E7%97%9B%E8%8B%A6%E7%9A%84%E5%AF%86%E7%A0%81%E5%AD%A6/" title="痛苦的密码学"><img src="https://cdn.jsdelivr.net/gh/bthcls756/photo@main/W0FImWkz.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="痛苦的密码学"/></a><div class="content"><a class="title" href="/2024/07/04/%E7%97%9B%E8%8B%A6%E7%9A%84%E5%AF%86%E7%A0%81%E5%AD%A6/" title="痛苦的密码学">痛苦的密码学</a><time datetime="2024-07-04T14:12:04.146Z" title="Created 2024-07-04 22:12:04">2024-07-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/07/04/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/" title="博客搭建记录"><img src="https://cdn.jsdelivr.net/gh/bthcls756/photo@main/W0FImWkz.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="博客搭建记录"/></a><div class="content"><a class="title" href="/2024/07/04/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/" title="博客搭建记录">博客搭建记录</a><time datetime="2024-07-04T13:48:33.277Z" title="Created 2024-07-04 21:48:33">2024-07-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/07/04/2024-6-21%20ciscn2024%E5%8D%8A%E5%86%B3%20220416/" title="2024CISCN西南赛区半决赛Web复现"><img src="https://cdn.jsdelivr.net/gh/bthcls756/photo@main/W0FImWkz.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2024CISCN西南赛区半决赛Web复现"/></a><div class="content"><a class="title" href="/2024/07/04/2024-6-21%20ciscn2024%E5%8D%8A%E5%86%B3%20220416/" title="2024CISCN西南赛区半决赛Web复现">2024CISCN西南赛区半决赛Web复现</a><time datetime="2024-07-04T10:04:41.834Z" title="Created 2024-07-04 18:04:41">2024-07-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/07/01/hello-world/" title="Hello World"><img src="https://cdn.jsdelivr.net/gh/bthcls756/photo@main/W0FImWkz.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2024/07/01/hello-world/" title="Hello World">Hello World</a><time datetime="2024-07-01T13:12:51.765Z" title="Created 2024-07-01 21:12:51">2024-07-01</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 By Bthcls</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my <a target="_blank" rel="noopener" href="https://bthcls756.github.io/">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="Toggle Between Traditional Chinese And Simplified Chinese">简</button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="/js/tw_cn.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
