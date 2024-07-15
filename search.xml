@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2024/07/14/BUUCTF%20%E5%8A%A0%E5%9B%BA%E9%A2%98/"/>
+      <url>/2024/07/14/BUUCTF%20%E5%8A%A0%E5%9B%BA%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<h1 id="BUUCTF-加固题"><a href="#BUUCTF-加固题" class="headerlink" title="BUUCTF 加固题"></a>BUUCTF 加固题</h1><h2 id="CISCN2021-总决赛-babypython"><a href="#CISCN2021-总决赛-babypython" class="headerlink" title="[CISCN2021 总决赛]babypython"></a>[CISCN2021 总决赛]babypython</h2><p>简单回顾了下题目的解法</p><p>unzip软链接读取源码和网卡等信息、构造uuid获得随机数种子，伪造session获得flag</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Moe CTF 2023复现</title>
       <link href="/2024/07/13/Moe%20CTF%202023%E5%A4%8D%E7%8E%B0/"/>
       <url>/2024/07/13/Moe%20CTF%202023%E5%A4%8D%E7%8E%B0/</url>
