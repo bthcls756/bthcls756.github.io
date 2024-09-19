@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Docker镜像源问题解决记录</title>
+      <link href="/2024/09/19/docker%E9%95%9C%E5%83%8F%E6%BA%90%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E8%AE%B0%E5%BD%95/"/>
+      <url>/2024/09/19/docker%E9%95%9C%E5%83%8F%E6%BA%90%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E8%AE%B0%E5%BD%95/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Docker镜像源问题解决记录"><a href="#Docker镜像源问题解决记录" class="headerlink" title="Docker镜像源问题解决记录"></a>Docker镜像源问题解决记录</h1><p>问题的根源是因为dockerhub被墙，同时国内的镜像加速源也都关闭或调整，所以我直接选择了采取代理的方式解决问题（代理的问题不方便做过多描述）</p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240919212645641.png" alt="image-20240919212645641"></p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 使配置生效</span><br><span class="line">systemctl daemon-reload</span><br><span class="line"># 重启Docker</span><br><span class="line">systemctl restart docker</span><br></pre></td></tr></table></figure><p>后面的话就正常pull想要的镜像就好</p><p>代理日志显示正常</p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240919212902965.png" alt="image-20240919212902965"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 环境搭建 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>对WebLogic的渗透测试笔记</title>
       <link href="/2024/08/31/%E5%AF%B9WebLogic%E7%9A%84%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/"/>
       <url>/2024/08/31/%E5%AF%B9WebLogic%E7%9A%84%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/</url>
